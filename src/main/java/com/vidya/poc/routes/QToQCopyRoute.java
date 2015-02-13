@@ -10,9 +10,9 @@ public class QToQCopyRoute extends RouteBuilder {
 
 	public void configure() {
 		
-		//from("jmstx:queue:INPUT.QUEUE")
-		//.threads(10)
-		//.log(LoggingLevel.DEBUG, "Moving to the next q")
-		//.to("jmstx:queue:OUTPUT.QUEUE");
+		from("jmstx:queue:INPUT.QUEUE")
+		.threads(10)
+		.log(LoggingLevel.DEBUG, "Moving to the next q")
+		.to("jmstx:queue:OUTPUT.QUEUE");
 	}
 }
